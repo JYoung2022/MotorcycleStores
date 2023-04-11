@@ -1,3 +1,8 @@
+/*This sql script generates the dataset with fields consisting of the order id, the customers first and last name, the customers city and state,
+the order date, sales volume, revenue, product name, product category, brand name, store name, and sales rep. These fields are scattered across nearly 9
+separate but related tables in the MotorcycleStores database. I performed a series of direct and indirect table joins to generate the dataset.*/
+
+
 SELECT
     ord.order_id,
 	CONCAT(cus.first_name, ' ', cus.last_name) AS 'customers',
@@ -37,7 +42,6 @@ GROUP BY
 	bra.brand_name,
 	sto.store_name,
 	CONCAT(sta.first_name, ' ', sta.last_name) 
-
 
 
 	
