@@ -2,7 +2,6 @@
 the order date, sales volume, revenue, product name, product category, brand name, store name, and sales rep. These fields are scattered across nearly 9
 separate but related tables in the MotorcycleStores database. I performed a series of direct and indirect table joins to generate the dataset.*/
 
-
 SELECT
     ord.order_id,
 	CONCAT(cus.first_name, ' ', cus.last_name) AS 'customers',
